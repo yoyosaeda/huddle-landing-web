@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 200px;
+    text-transform: capitalize;
+    box-shadow: 1px 1px 4px 0px gray;
+    cursor: pointer;
+}
+
+/* start heading  */
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    top: 30px;
+    position: absolute;
+    min-width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header .container .logo {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+header .container .logo i {
+    color: hsl(322, 100%, 66%);
+    font-size: 30px;
+}
+
+header .container .logo h3 {
+    color: black;
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+
+header .container .button button {
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 200px;
+    text-transform: capitalize;
+    box-shadow: 1px 1px 4px 0px gray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header .container .button button:hover {
+    background-color: rgb(254, 244, 244);
+    width: 250px;
+    color: rgb(0, 191, 255);
+}
+
+/* end heading  */
+
+
+/* start intro section  */
+
+.intro {
+    min-height: 100vh;
+    background-color: #1f2021;
+    background-image: url(../images/vecteezy_abstract-gradient-pastel-blue-and-purple-background-neon_8617161-1.jpg);
+    background-size: cover;
+}
+
+.intro .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    position: absolute;
+    top: 20%;
+    align-items: center;
+}
+
+.intro .left {
+    width: 40%;
+}
+
+.intro .left .text h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.intro .left .text p {
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.intro .left .button button {
+    background-color: hsl(322, 100%, 66%);
+    width: 250px;
+    color: white;
+    font-size: 16px;
+}
+
+.intro .container .right {
+    width: 45%;
+}
+
+.intro .container .right .image {
+    width: 100%;
+    height: 100%;
+}
+
+.intro .container .right .image img {
+    max-width: 100%;
+    max-height: 50%;
+}
+
+/* End intro section  */
+
+/* start services section  */
+
+.services {
+    margin-top: 100px;
+}
+
+.services .container .first-ser {
+    box-shadow: 1px 2px 17px -6px gray;
+    height: 300px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.services .container .first-ser .container {
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.services .container .first-ser .container .left {
+    width: 50%;
+}
+
+.services .container .first-ser .container .left h4 {
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.services .container .first-ser .container .left p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.services .container .first-ser .container .right {
+    width: 50%;
+    height: calc(100% - 50px);
+}
+
+.services .container .first-ser .container .right .image {
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-25%);
+}
+
+.services .container .first-ser .container .right .image img {
+    max-width: 40%;
+    max-height: 10%;
+}
+
+.services .container .second .container {
+    flex-direction: row-reverse;
+}
+
+
+/* End services section  */
+
+/* start footer  */
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    margin-top: 300px;
+    height: 55vh;
+}
+footer .container .float {
+    background-color: white;
+    box-shadow: 1px 1px 28px -12px gray;    ;
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+footer .container .float .text h4 {
+    color: black;
+}
+footer .container .float .button button {
+    background-color: hsl(322, 100%, 66%);
+    width: 250px;
+    color: white;
+    font-size: 16px;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    position: relative;
+    top: 60%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+footer .container .logo {
+    position: absolute;
+    color: white;
+    top: -10px;
+}
+footer .container .logo  i {
+    margin-right: 5px;
+}
+
+footer .container .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+footer .container .contact div {
+    display: flex;
+}
+
+footer .container .contact div i {
+    margin-right: 15px;
+}
+footer .container .contact div p {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+footer .container .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+footer .container .contact div a {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+footer .container .contact-1 {
+    display: flex;
+    flex-direction: row;
+}
+footer .container .contact-1 div {
+    margin-right: 10px;
+}
+footer .container .contact-1 div a {
+    color: white;
+}
+footer .container .contact-1 {
+    align-self: flex-start;
+    position: relative;
+    top: 20%;
+}
+
+footer .container .copy {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 200;
+    left: 75%;
+    z-index: 2;
+    top: 100%;
+}
+/* End footer  */
